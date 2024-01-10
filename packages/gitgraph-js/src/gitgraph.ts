@@ -438,7 +438,7 @@ function createGitgraph(
     return branches.map((branch) => {
       if (!branch.style.label.display) return null;
 
-      if (!gitgraph.branchLabelOnEveryCommit) {
+      if (!gitgraph.branchLabelOnEveryCommit || commit.showLabel) {
         const commitHash = gitgraph.refs.getCommit(branch.name);
         if (commit.hash !== commitHash) return null;
       }

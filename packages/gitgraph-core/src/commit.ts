@@ -20,6 +20,7 @@ interface CommitOptions<TNode> extends CommitRenderOptions<TNode> {
   hash?: string;
   parents?: string[];
   dotText?: string;
+  showLabel?: boolean;
   onClick?: (commit: Commit<TNode>) => void;
   onMessageClick?: (commit: Commit<TNode>) => void;
   onMouseOver?: (commit: Commit<TNode>) => void;
@@ -128,6 +129,7 @@ class Commit<TNode = SVGElement> {
 
     return message;
   }
+  public showLabel : boolean | undefined;
   /**
    * Style
    */
