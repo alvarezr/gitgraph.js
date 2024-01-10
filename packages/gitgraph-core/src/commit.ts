@@ -129,7 +129,7 @@ class Commit<TNode = SVGElement> {
 
     return message;
   }
-  public showLabel : boolean | undefined;
+  public showLabel: boolean | undefined;
   /**
    * Style
    */
