@@ -6,8 +6,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var Orientation;
 (function (Orientation) {
-  Orientation["VerticalReverse"] = "vertical-reverse";
-  Orientation["Horizontal"] = "horizontal";
-  Orientation["HorizontalReverse"] = "horizontal-reverse";
-})((Orientation = exports.Orientation || (exports.Orientation = {})));
+    Orientation["VerticalReverse"] = "vertical-reverse";
+    Orientation["Horizontal"] = "horizontal";
+    Orientation["HorizontalReverse"] = "horizontal-reverse";
+})(Orientation = exports.Orientation || (exports.Orientation = {}));
 //# sourceMappingURL=orientation.js.map

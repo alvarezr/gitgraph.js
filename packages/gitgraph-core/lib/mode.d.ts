@@ -1,4 +1,4 @@
 export { Mode };
 declare enum Mode {
-  Compact = "compact",
+    Compact = "compact"
 }

@@ -1,26 +1,26 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 class RegularGraphRows {
-  constructor(commits) {
-    this.rows = new Map();
-    this.maxRowCache = undefined;
-    this.computeRowsFromCommits(commits);
-  }
-  getRowOf(commitHash) {
-    return this.rows.get(commitHash) || 0;
-  }
-  getMaxRow() {
-    if (this.maxRowCache === undefined) {
-      this.maxRowCache = uniq(Array.from(this.rows.values())).length - 1;
+    constructor(commits) {
+        this.rows = new Map();
+        this.maxRowCache = undefined;
+        this.computeRowsFromCommits(commits);
     }
-    return this.maxRowCache;
-  }
-  computeRowsFromCommits(commits) {
-    commits.forEach((commit, i) => {
-      this.rows.set(commit.hash, i);
-    });
-    this.maxRowCache = undefined;
-  }
+    getRowOf(commitHash) {
+        return this.rows.get(commitHash) || 0;
+    }
+    getMaxRow() {
+        if (this.maxRowCache === undefined) {
+            this.maxRowCache = uniq(Array.from(this.rows.values())).length - 1;
+        }
+        return this.maxRowCache;
+    }
+    computeRowsFromCommits(commits) {
+        commits.forEach((commit, i) => {
+            this.rows.set(commit.hash, i);
+        });
+        this.maxRowCache = undefined;
+    }
 }
 exports.RegularGraphRows = RegularGraphRows;
 /**
@@ -34,8 +34,8 @@ exports.RegularGraphRows = RegularGraphRows;
  * @param array Array of values
  */
 function uniq(array) {
-  const set = new Set();
-  array.forEach((value) => set.add(value));
-  return Array.from(set);
+    const set = new Set();
+    array.forEach((value) => set.add(value));
+    return Array.from(set);
 }
 //# sourceMappingURL=regular.js.map

@@ -1,18 +1,7 @@
 import { Commit } from "./commit";
 import { GitgraphCore } from "./gitgraph";
 import { Coordinate } from "./branches-paths";
-export {
-  Omit,
-  NonMatchingPropNames,
-  NonMatchingProp,
-  booleanOptionOr,
-  numberOptionOr,
-  pick,
-  debug,
-  isUndefined,
-  withoutUndefinedKeys,
-  arrowSvgPath,
-};
+export { Omit, NonMatchingPropNames, NonMatchingProp, booleanOptionOr, numberOptionOr, pick, debug, isUndefined, withoutUndefinedKeys, arrowSvgPath, };
 /**
  * Omit some keys from an original type.
  */
@@ -23,7 +12,7 @@ declare type Omit<T, K> = Pick<T, Exclude<keyof T, K>>;
  * @ref http://tycho01.github.io/typical/modules/_object_nonmatchingpropsnames_.html
  */
 declare type NonMatchingPropNames<T, X> = {
-  [K in keyof T]: T[K] extends X ? never : K;
+    [K in keyof T]: T[K] extends X ? never : K;
 }[keyof T];
 /**
  * Get all properties with names not matching a type.
@@ -54,10 +43,7 @@ declare function pick<T, K extends keyof T>(obj: T, paths: K[]): Pick<T, K>;
  * @param commits List of commits
  * @param paths The property paths to pick
  */
-declare function debug<TNode = SVGElement>(
-  commits: Array<Commit<TNode>>,
-  paths: Array<keyof Commit<TNode>>,
-): void;
+declare function debug<TNode = SVGElement>(commits: Array<Commit<TNode>>, paths: Array<keyof Commit<TNode>>): void;
 /**
  * Return true if is undefined.
  *
@@ -69,9 +55,7 @@ declare function isUndefined(obj: any): obj is undefined;
  *
  * @param obj
  */
-declare function withoutUndefinedKeys<T>(
-  obj?: T,
-): NonMatchingProp<T, undefined>;
+declare function withoutUndefinedKeys<T>(obj?: T): NonMatchingProp<T, undefined>;
 /**
  * Return a string ready to use in `svg.path.d` to draw an arrow from params.
  *
@@ -79,8 +63,4 @@ declare function withoutUndefinedKeys<T>(
  * @param parent Parent commit of the target commit
  * @param commit Target commit
  */
-declare function arrowSvgPath<TNode = SVGElement>(
-  graph: GitgraphCore<TNode>,
-  parent: Coordinate,
-  commit: Commit<TNode>,
-): string;
+declare function arrowSvgPath<TNode = SVGElement>(graph: GitgraphCore<TNode>, parent: Coordinate, commit: Commit<TNode>): string;

@@ -1,15 +1,7 @@
 export { GitgraphCore, GitgraphOptions, RenderedData } from "./gitgraph";
 export { Mode } from "./mode";
-export {
-  GitgraphUserApi,
-  GitgraphCommitOptions,
-  GitgraphBranchOptions,
-  GitgraphTagOptions,
-} from "./user-api/gitgraph-user-api";
-export {
-  BranchUserApi,
-  GitgraphMergeOptions,
-} from "./user-api/branch-user-api";
+export { GitgraphUserApi, GitgraphCommitOptions, GitgraphBranchOptions, GitgraphTagOptions, } from "./user-api/gitgraph-user-api";
+export { BranchUserApi, GitgraphMergeOptions, } from "./user-api/branch-user-api";
 export { Branch } from "./branch";
 export { Commit } from "./commit";
 export { Tag } from "./tag";
