@@ -189,6 +189,7 @@ class Commit<TNode = SVGElement> {
     } catch (e) {
       [name, email] = [options.author, ""];
     }
+
     this.author = { name, email, timestamp: Date.now() };
     this.committer = { name, email, timestamp: Date.now() };
 
@@ -212,6 +213,9 @@ class Commit<TNode = SVGElement> {
     };
 
     this.dotText = options.dotText;
+
+    // hide or display label
+    this.showLabel = options.showLabel;
 
     // Set callbacks
     this.onClick = () => (options.onClick ? options.onClick(this) : undefined);

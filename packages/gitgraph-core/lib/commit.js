@@ -46,6 +46,8 @@ class Commit {
         // Set style
         this.style = Object.assign({}, options.style, { message: Object.assign({}, options.style.message), dot: Object.assign({}, options.style.dot) });
         this.dotText = options.dotText;
+        // hide or display label
+        this.showLabel = options.showLabel;
         // Set callbacks
         this.onClick = () => (options.onClick ? options.onClick(this) : undefined);
         this.onMessageClick = () => options.onMessageClick ? options.onMessageClick(this) : undefined;
