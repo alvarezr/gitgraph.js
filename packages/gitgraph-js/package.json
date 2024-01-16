@@ -49,7 +49,7 @@
     "version": "auto-changelog -p -l 0 --tag-prefix @gitgraph/js@ && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@gitgraph/core": "https://github.com/alvarezr/gitgraph.js/tree/master/packages/gitgraph-core"
+    "@gitgraph/core": "1.5.0"
   },
   "devDependencies": {
     "@types/node": "9.4.6",
