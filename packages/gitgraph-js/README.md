@@ -111,7 +111,7 @@ Create an `index.html` file:
 Create an `index.js` file:
 
 ```js
-import { createGitgraph } from @mobi/gitgraph-core";
+import { createGitgraph } from "@ram/gitgraph-core";
 
 // Get the graph container HTML element.
 const graphContainer = document.getElementById("graph-container");
@@ -127,10 +127,7 @@ const develop = gitgraph.branch("develop");
 develop.commit("Add TypeScript");
 
 const aFeature = gitgraph.branch("a-feature");
-aFeature
-  .commit("Make it work")
-  .commit("Make it right")
-  .commit("Make it fast");
+aFeature.commit("Make it work").commit("Make it right").commit("Make it fast");
 
 develop.merge(aFeature);
 develop.commit("Prepare v1");

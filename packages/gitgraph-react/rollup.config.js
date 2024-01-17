@@ -1,5 +1,5 @@
 const globals = {
-  "@mobi/gitgraph-core": "gitgraph.core",
+  "@ram/gitgraph-core": "gitgraph.core",
 };
 
 export default {

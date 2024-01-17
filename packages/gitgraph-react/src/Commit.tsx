@@ -4,7 +4,7 @@ import {
   Commit as CommitCore,
   Mode,
   Coordinate,
-} from "@mobi/gitgraph-core";
+} from "@ram/gitgraph-core";
 import { ReactSvgElement } from "./types";
 import { Dot } from "./Dot";
 import { Tooltip } from "./Tooltip";
@@ -68,7 +68,7 @@ export const Commit = (props: CommitsProps) => {
   }, [commits, commit, gitgraph]);
 
   const branchLabels = React.useMemo(() => {
-    // @mobi/gitgraph-core could compute branch labels into commits directly.
+    // @ram/gitgraph-core could compute branch labels into commits directly.
     // That will make it easier to retrieve them, just like tags.
     const branches = Array.from(gitgraph.branches.values());
     return branches.map((branch) => {

@@ -4,7 +4,7 @@ import {
   GitgraphCore,
   Coordinate,
   Branch,
-} from "@mobi/gitgraph-core";
+} from "@ram/gitgraph-core";
 import { ReactSvgElement } from "./types";
 import { ReactElement } from "react";
 

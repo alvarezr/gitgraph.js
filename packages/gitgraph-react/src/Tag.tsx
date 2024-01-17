@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Tag as CoreTag, Commit } from "@mobi/gitgraph-core";
+import { Tag as CoreTag, Commit } from "@ram/gitgraph-core";
 import { ReactSvgElement } from "./types";
 
 interface BaseTagProps {

@@ -4,7 +4,7 @@ import {
   BranchUserApi,
   templateExtend,
   TemplateName,
-} from "@mobi/gitgraph-core";
+} from "@ram/gitgraph-core";
 
 import computeGraphMap, { GraphCommit, GraphMap } from "./compute-graph-map";
 

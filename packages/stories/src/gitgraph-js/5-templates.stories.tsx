@@ -4,7 +4,7 @@ import {
   createGitgraph,
   TemplateName,
   templateExtend,
-} from "@mobi/gitgraph-js";
+} from "@ram/gitgraph-js";
 
 import { createFixedHashGenerator, GraphContainer } from "../helpers";
 
