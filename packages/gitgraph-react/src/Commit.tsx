@@ -4,7 +4,7 @@ import {
   Commit as CommitCore,
   Mode,
   Coordinate,
-} from "@gitgraph/core";
+} from "@mobi/gitgraph-core";
 import { ReactSvgElement } from "./types";
 import { Dot } from "./Dot";
 import { Tooltip } from "./Tooltip";

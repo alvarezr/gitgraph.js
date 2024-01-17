@@ -18,7 +18,7 @@ function createFixedHashGenerator() {
 }
 
 /**
- * A React container to wrap HTMLElement so we can render @gitgraph/js
+ * A React container to wrap HTMLElement so we can render @mobi/gitgraph-js
  * stories with @storybook/react.
  * We need to because Chromatic QA only handle 1 Storybook / repo.
  * And Storybook doesn't run multiple frameworks in 1 Storybook (yet).

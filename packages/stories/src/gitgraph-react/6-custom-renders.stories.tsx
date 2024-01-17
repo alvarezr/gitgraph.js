@@ -9,7 +9,7 @@ import {
   Orientation,
   templateExtend,
   TemplateName,
-} from "@gitgraph/react";
+} from "@mobi/gitgraph-react";
 
 import { createFixedHashGenerator } from "../helpers";
 

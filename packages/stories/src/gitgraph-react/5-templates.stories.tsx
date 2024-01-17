@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Gitgraph, templateExtend, TemplateName } from "@gitgraph/react";
+import { Gitgraph, templateExtend, TemplateName } from "@mobi/gitgraph-react";
 
 import { createFixedHashGenerator } from "../helpers";
 

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { Gitgraph, Mode, Branch } from "@gitgraph/react";
-import { GitgraphCore } from "@gitgraph/core";
+import { Gitgraph, Mode, Branch } from "@mobi/gitgraph-react";
+import { GitgraphCore } from "@mobi/gitgraph-js";
 
 import { createFixedHashGenerator, hashPrefix } from "../helpers";
 

@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Branch, Commit, GitgraphCore } from "@gitgraph/core";
+import { Branch, Commit, GitgraphCore } from "@mobi/gitgraph-core";
 import { ReactSvgElement } from "./types";
 import { MutableRefObject } from "react";
 

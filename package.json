@@ -22,12 +22,10 @@
   ],
   "scripts": {
     "lerna": "lerna",
-    "build": "lerna run build --scope=@gitgraph/{core,react,js,node} --stream",
+    "build": "lerna run build --scope=@mobi/{core,js} --stream",
     "watch": "lerna run watch --stream",
     "storybook": "sleep 3 && lerna run storybook --stream",
     "develop": "concurrently npm:watch npm:storybook",
-    "website": "lerna run start --scope=@gitgraph/website --stream",
-    "deploy:website": "lerna run deploy --scope=@gitgraph/website --stream",
     "lint": "eslint packages/**/src/**/*.{ts,tsx}",
     "lint:fix": "npm run lint -- --fix",
     "pretest": "npm run build",

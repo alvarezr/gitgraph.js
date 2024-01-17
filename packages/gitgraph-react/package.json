@@ -1,5 +1,5 @@
 {
-  "name": "@gitgraph/react",
+  "name": "@mobi/gitgraph-react",
   "version": "1.6.0",
   "description": "Draw pretty git graphs in the browser, with React",
   "author": "Nicolas Carlo <nicolascarlo.espeon@gmail.com>",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/alvarezr/gitgraph.js.git"
   },
   "bugs": {
-    "url": "https://github.com/nicoespeon/gitgraph.js/issues"
+    "url": "https://github.com/alvarezr/gitgraph.js/issues"
   },
   "keywords": [
     "react",
@@ -23,7 +23,7 @@
     "graph",
     "javascript"
   ],
-  "homepage": "https://github.com/nicoespeon/gitgraph.js#readme",
+  "homepage": "https://github.com/alvarezr/gitgraph.js#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -41,10 +41,10 @@
     "build:browserify": "browserify ./lib/bundle.umd.js -o ./lib/bundle.js",
     "build:minify": "uglifyjs -c -m -o ./lib/bundle.min.js -- ./lib/bundle.js",
     "prepare": "npm run build",
-    "version": "auto-changelog -p -l 0 --tag-prefix @gitgraph/react@ && git add CHANGELOG.md"
+    "version": "auto-changelog -p -l 0 --tag-prefix @mobi/gitgraph-react@ && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@gitgraph/core": "1.5.0"
+    "@mobi/gitgraph-core": "1.5.0"
   },
   "peerDependencies": {
     "react": ">= 16.8.0"

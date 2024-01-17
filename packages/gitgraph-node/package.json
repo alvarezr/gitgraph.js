@@ -1,5 +1,5 @@
 {
-  "name": "@gitgraph/node",
+  "name": "@mobi/gitgraph-node",
   "version": "0.1.18",
   "description": "Draw pretty git graphs in the terminal, with node.js",
   "author": "Nicolas Carlo <nicolascarlo.espeon@gmail.com>",
@@ -15,7 +15,7 @@
     "url": "git+https://github.com/alvarezr/gitgraph.js.git"
   },
   "bugs": {
-    "url": "https://github.com/nicoespeon/gitgraph.js/issues"
+    "url": "https://github.com/alvarezr/gitgraph.js/issues"
   },
   "keywords": [
     "node",
@@ -23,7 +23,7 @@
     "graph",
     "javascript"
   ],
-  "homepage": "https://github.com/nicoespeon/gitgraph.js#readme",
+  "homepage": "https://github.com/alvarezr/gitgraph.js#readme",
   "publishConfig": {
     "access": "public"
   },
@@ -31,10 +31,10 @@
   "scripts": {
     "example:default": "ts-node examples/default.ts",
     "example:branches": "ts-node examples/branches.ts",
-    "version": "auto-changelog -p -l 0 --tag-prefix @gitgraph/node@ && git add CHANGELOG.md"
+    "version": "auto-changelog -p -l 0 --tag-prefix @mobi/gitgraph-node@ && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@gitgraph/core": "1.5.0",
+    "@mobi/gitgraph-core": "1.5.0",
     "chalk": "2.4.1",
     "lodash": "4.17.13"
   },
