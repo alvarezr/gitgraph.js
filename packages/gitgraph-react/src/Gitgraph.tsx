@@ -11,7 +11,7 @@ import {
   templateExtend,
   BranchesPaths,
   Coordinate,
-} from "@gitgraph/core";
+} from "@mobi/gitgraph-core";
 
 import { BranchLabel } from "./BranchLabel";
 import { Tooltip } from "./Tooltip";

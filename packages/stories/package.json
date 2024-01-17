@@ -17,9 +17,9 @@
     "build": "build-storybook"
   },
   "dependencies": {
-    "@gitgraph/core": "1.5.0",
-    "@gitgraph/js": "1.4.0",
-    "@gitgraph/react": "1.6.0"
+    "@mobi/gitgraph-core": "1.5.0",
+    "@mobi/gitgraph-js": "1.4.0",
+    "@mobi/gitgraph-react": "1.6.0"
   },
   "devDependencies": {
     "@babel/core": "7.4.3",

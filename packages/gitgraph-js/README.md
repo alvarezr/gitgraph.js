@@ -30,41 +30,41 @@ Create an `index.html` file and start coding:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- Load the JS file -->
-  <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
-</head>
-<body>
-  <!-- DOM element in which we'll mount our graph -->
-  <div id="graph-container"></div>
+  <head>
+    <!-- Load the JS file -->
+    <script src="https://cdn.jsdelivr.net/npm/@gitgraph/js"></script>
+  </head>
+  <body>
+    <!-- DOM element in which we'll mount our graph -->
+    <div id="graph-container"></div>
 
-  <!-- Use the `GitgraphJS` global variable to create your graph -->
-  <script>
-    // Get the graph container HTML element.
-    const graphContainer = document.getElementById("graph-container");
+    <!-- Use the `GitgraphJS` global variable to create your graph -->
+    <script>
+      // Get the graph container HTML element.
+      const graphContainer = document.getElementById("graph-container");
 
-    // Instantiate the graph.
-    const gitgraph = GitgraphJS.createGitgraph(graphContainer);
+      // Instantiate the graph.
+      const gitgraph = GitgraphJS.createGitgraph(graphContainer);
 
-    // Simulate git commands with Gitgraph API.
-    const master = gitgraph.branch("master");
-    master.commit("Initial commit");
+      // Simulate git commands with Gitgraph API.
+      const master = gitgraph.branch("master");
+      master.commit("Initial commit");
 
-    const develop = master.branch("develop");
-    develop.commit("Add TypeScript");
+      const develop = master.branch("develop");
+      develop.commit("Add TypeScript");
 
-    const aFeature = develop.branch("a-feature");
-    aFeature
-      .commit("Make it work")
-      .commit("Make it right")
-      .commit("Make it fast");
+      const aFeature = develop.branch("a-feature");
+      aFeature
+        .commit("Make it work")
+        .commit("Make it right")
+        .commit("Make it fast");
 
-    develop.merge(aFeature);
-    develop.commit("Prepare v1");
+      develop.merge(aFeature);
+      develop.commit("Prepare v1");
 
-    master.merge(develop).tag("v1.0.0");
-  </script>
-</body>
+      master.merge(develop).tag("v1.0.0");
+    </script>
+  </body>
 </html>
 ```
 
@@ -95,23 +95,23 @@ Create an `index.html` file:
 ```html
 <!DOCTYPE html>
 <html>
-<head>
-  <!-- … -->
-</head>
-<body>
-  <!-- DOM element in which we'll mount our graph -->
-  <div id="graph-container"></div>
+  <head>
+    <!-- … -->
+  </head>
+  <body>
+    <!-- DOM element in which we'll mount our graph -->
+    <div id="graph-container"></div>
 
-  <!-- This is for ParcelJS bundler -->
-  <script src="./index.js"></script>
-</body>
+    <!-- This is for ParcelJS bundler -->
+    <script src="./index.js"></script>
+  </body>
 </html>
 ```
 
 Create an `index.js` file:
 
 ```js
-import { createGitgraph } from "@gitgraph/js";
+import { createGitgraph } from @mobi/gitgraph-core";
 
 // Get the graph container HTML element.
 const graphContainer = document.getElementById("graph-container");

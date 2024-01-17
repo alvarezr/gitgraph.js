@@ -1,5 +1,5 @@
 import * as React from "react";
-import { toSvgPath, GitgraphCore, Coordinate, Branch } from "@gitgraph/core";
+import { toSvgPath, GitgraphCore, Coordinate, Branch } from "@mobi/gitgraph-core";
 import { ReactSvgElement } from "./types";
 import { ReactElement } from "react";
 
