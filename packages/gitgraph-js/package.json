@@ -34,9 +34,6 @@
   "directories": {
     "lib": "lib"
   },
-  "files": [
-    "lib"
-  ],
   "scripts": {
     "prewatch": "rimraf ./lib",
     "watch": "tsc -w",

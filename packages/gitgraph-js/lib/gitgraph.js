@@ -1,4 +1,4 @@
-import { GitgraphCore, MergeStyle, arrowSvgPath, toSvgPath, Mode, Orientation, TemplateName, templateExtend, } from "@gitgraph/core";
+import { GitgraphCore, MergeStyle, arrowSvgPath, toSvgPath, Mode, Orientation, TemplateName, templateExtend, } from "@sourceflow/gitgraph-core";
 import { createSvg, createG, createText, createCircle, createUse, createPath, createClipPath, createDefs, createForeignObject, } from "./svg-elements";
 import { createBranchLabel, PADDING_X as BRANCH_LABEL_PADDING_X, PADDING_Y as BRANCH_LABEL_PADDING_Y, } from "./branch-label";
 import { createTag, PADDING_X as TAG_PADDING_X } from "./tag";
@@ -280,7 +280,7 @@ function createGitgraph(graphContainer, options) {
         }
     }
     function renderBranchLabels(commit) {
-        // @gitgraph/core could compute branch labels into commits directly.
+        // @sourceflow/gitgraph-core could compute branch labels into commits directly.
         // That will make it easier to retrieve them, just like tags.
         var branches = Array.from(gitgraph.branches.values());
         return branches.map(function (branch) {

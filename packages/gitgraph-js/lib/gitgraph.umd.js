@@ -2377,7 +2377,7 @@
 	        }
 	    }
 	    function renderBranchLabels(commit) {
-	        // @gitgraph/core could compute branch labels into commits directly.
+	        // @sourceflow/gitgraph-core could compute branch labels into commits directly.
 	        // That will make it easier to retrieve them, just like tags.
 	        var branches = Array.from(gitgraph.branches.values());
 	        return branches.map(function (branch) {
