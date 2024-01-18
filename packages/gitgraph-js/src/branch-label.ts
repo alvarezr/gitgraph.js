@@ -1,4 +1,4 @@
-import { Branch, Commit } from "@ram/gitgraph-core";
+import { Branch, Commit } from "@sourceflow/gitgraph-core";
 import { createG, createRect, createText } from "./svg-elements";
 
 export { createBranchLabel, PADDING_X, PADDING_Y };

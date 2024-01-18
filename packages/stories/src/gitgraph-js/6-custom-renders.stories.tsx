@@ -9,7 +9,7 @@ import {
   Orientation,
   TemplateName,
   templateExtend,
-} from "@ram/gitgraph-js";
+} from "@sourceflow/gitgraph-js";
 
 import {
   GraphContainer,

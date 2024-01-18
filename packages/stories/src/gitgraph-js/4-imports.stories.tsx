@@ -1,6 +1,6 @@
 import * as React from "react";
 import { storiesOf } from "@storybook/react";
-import { createGitgraph, Mode } from "@ram/gitgraph-js";
+import { createGitgraph, Mode } from "@sourceflow/gitgraph-js";
 
 import { GraphContainer } from "../helpers";
 import simpleGraph from "../import-fixtures/simple-graph";

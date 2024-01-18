@@ -1,6 +1,6 @@
 import * as React from "react";
 import { ReactSvgElement } from "./types";
-import { Commit } from "@ram/gitgraph-core";
+import { Commit } from "@sourceflow/gitgraph-core";
 
 interface MessageProps {
   commit: Commit<ReactSvgElement>;

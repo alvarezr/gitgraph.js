@@ -16,7 +16,7 @@ import {
   Orientation,
   TemplateName,
   templateExtend,
-} from "@ram/gitgraph-core";
+} from "@sourceflow/gitgraph-core";
 
 import {
   createSvg,
@@ -432,7 +432,7 @@ function createGitgraph(
   }
 
   function renderBranchLabels(commit: Commit): Array<SVGElement | null> {
-    // @ram/gitgraph-core could compute branch labels into commits directly.
+    // @sourceflow/gitgraph-core could compute branch labels into commits directly.
     // That will make it easier to retrieve them, just like tags.
     const branches = Array.from(gitgraph.branches.values());
     return branches.map((branch) => {

@@ -1,5 +1,5 @@
 const globals = {
-  "@ram/gitgraph-core": "gitgraph.core",
+  "@sourceflow/gitgraph-core": "gitgraph.core",
 };
 
 export default {

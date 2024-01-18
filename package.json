@@ -22,7 +22,7 @@
   ],
   "scripts": {
     "lerna": "lerna",
-    "build": "lerna run build --scope=@ram/{core,js} --stream",
+    "build": "lerna run build --scope=@sourceflow/{core,react,js,node} --stream",
     "watch": "lerna run watch --stream",
     "storybook": "sleep 3 && lerna run storybook --stream",
     "develop": "concurrently npm:watch npm:storybook",

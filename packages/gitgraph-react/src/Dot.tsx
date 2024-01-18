@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Commit } from "@ram/gitgraph-core";
+import { Commit } from "@sourceflow/gitgraph-core";
 
 export interface DotProps {
   commit: Commit<React.ReactElement<SVGElement>>;

@@ -1,4 +1,4 @@
-import { Commit } from "@ram/gitgraph-core";
+import { Commit } from "@sourceflow/gitgraph-core";
 
 import { createG, createPath, createText } from "./svg-elements";
 

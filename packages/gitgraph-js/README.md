@@ -111,7 +111,7 @@ Create an `index.html` file:
 Create an `index.js` file:
 
 ```js
-import { createGitgraph } from "@ram/gitgraph-core";
+import { createGitgraph } from "@sourceflow/gitgraph-core";
 
 // Get the graph container HTML element.
 const graphContainer = document.getElementById("graph-container");

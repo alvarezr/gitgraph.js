@@ -5,7 +5,7 @@ import {
   GitgraphTagOptions,
   GitgraphMergeOptions,
   BranchUserApi,
-} from "@ram/gitgraph-core";
+} from "@sourceflow/gitgraph-core";
 
 export type ReactSvgElement = React.ReactElement<SVGElement>;
 
