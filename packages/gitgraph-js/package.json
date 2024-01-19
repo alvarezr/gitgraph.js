@@ -1,6 +1,6 @@
 {
   "name": "@sourceflow/gitgraph-js",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "description": "Draw pretty git graphs in the browser",
   "author": "Nicolas Carlo <nicolascarlo.espeon@gmail.com>",
   "contributors": [
@@ -46,7 +46,7 @@
     "version": "auto-changelog -p -l 0 --tag-prefix @sourceflow/gitgraph-js@ && git add CHANGELOG.md"
   },
   "dependencies": {
-    "@sourceflow/gitgraph-core": "1.5.0"
+    "@sourceflow/gitgraph-core": "1.5.1"
   },
   "devDependencies": {
     "@types/node": "9.4.6",

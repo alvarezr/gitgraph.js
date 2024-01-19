@@ -177,6 +177,7 @@ class GitgraphCore<TNode = SVGElement> {
       name: "",
       parentCommitHash: this.refs.getCommit(defaultParentBranchName),
       style: this.template.branch,
+      showLabel: args.showLabel,
       onGraphUpdate: () => this.next(),
     };
 

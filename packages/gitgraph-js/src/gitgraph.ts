@@ -438,7 +438,7 @@ function createGitgraph(
     return branches.map((branch) => {
       if (!branch.style.label.display) return null;
       // add condition to show commit lbl
-      if (!gitgraph.branchLabelOnEveryCommit || commit.showLabel) {
+      if (!gitgraph.branchLabelOnEveryCommit || branch.showLabel) {
         const commitHash = gitgraph.refs.getCommit(branch.name);
         if (commit.hash !== commitHash) return null;
       }

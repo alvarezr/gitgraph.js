@@ -32,6 +32,10 @@ interface BranchOptions<TNode = SVGElement> extends BranchRenderOptions<TNode> {
    */
   style: BranchStyle;
   /**
+   * Show branch label
+   */
+  showLabel: boolean;
+  /**
    * Parent commit
    */
   parentCommitHash?: Commit["hash"];
@@ -52,6 +56,7 @@ declare class Branch<TNode = SVGElement> {
   parentCommitHash: BranchOptions["parentCommitHash"];
   commitDefaultOptions: BranchCommitDefaultOptions<TNode>;
   renderLabel: BranchOptions<TNode>["renderLabel"];
+  showLabel: BranchOptions["showLabel"];
   private gitgraph;
   private onGraphUpdate;
   constructor(options: BranchOptions<TNode>);

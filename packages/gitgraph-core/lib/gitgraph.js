@@ -99,6 +99,7 @@ class GitgraphCore {
             name: "",
             parentCommitHash: this.refs.getCommit(defaultParentBranchName),
             style: this.template.branch,
+            showLabel: args.showLabel,
             onGraphUpdate: () => this.next(),
         };
         if (typeof args === "string") {

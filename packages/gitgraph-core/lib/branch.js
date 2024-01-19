@@ -12,6 +12,7 @@ class Branch {
         this.commitDefaultOptions = options.commitDefaultOptions || { style: {} };
         this.onGraphUpdate = options.onGraphUpdate;
         this.renderLabel = options.renderLabel;
+        this.showLabel = options.showLabel;
     }
     /**
      * Return the API to manipulate Gitgraph branch as a user.
@@ -33,6 +34,7 @@ function createDeletedBranch(gitgraph, style, onGraphUpdate) {
         gitgraph,
         style,
         onGraphUpdate,
+        showLabel: false,
     });
 }
 exports.createDeletedBranch = createDeletedBranch;

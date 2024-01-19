@@ -36,6 +36,10 @@ interface BranchOptions<TNode = SVGElement> extends BranchRenderOptions<TNode> {
    */
   style: BranchStyle;
   /**
+   * Show branch label
+   */
+  showLabel: boolean;
+  /**
    * Parent commit
    */
   parentCommitHash?: Commit["hash"];
@@ -58,6 +62,7 @@ class Branch<TNode = SVGElement> {
   public parentCommitHash: BranchOptions["parentCommitHash"];
   public commitDefaultOptions: BranchCommitDefaultOptions<TNode>;
   public renderLabel: BranchOptions<TNode>["renderLabel"];
+  public showLabel: BranchOptions["showLabel"];
 
   private gitgraph: GitgraphCore<TNode>;
   private onGraphUpdate: () => void;
@@ -70,6 +75,7 @@ class Branch<TNode = SVGElement> {
     this.commitDefaultOptions = options.commitDefaultOptions || { style: {} };
     this.onGraphUpdate = options.onGraphUpdate;
     this.renderLabel = options.renderLabel;
+    this.showLabel = options.showLabel;
   }
 
   /**
@@ -97,5 +103,6 @@ function createDeletedBranch<TNode>(
     gitgraph,
     style,
     onGraphUpdate,
+    showLabel: false,
   });
 }

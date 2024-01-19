@@ -798,6 +798,7 @@
 	        this.commitDefaultOptions = options.commitDefaultOptions || { style: {} };
 	        this.onGraphUpdate = options.onGraphUpdate;
 	        this.renderLabel = options.renderLabel;
+	        this.showLabel = options.showLabel;
 	    }
 	    /**
 	     * Return the API to manipulate Gitgraph branch as a user.
@@ -819,6 +820,7 @@
 	        gitgraph,
 	        style,
 	        onGraphUpdate,
+	        showLabel: false,
 	    });
 	}
 	exports.createDeletedBranch = createDeletedBranch;
@@ -1576,6 +1578,7 @@
 	            name: "",
 	            parentCommitHash: this.refs.getCommit(defaultParentBranchName),
 	            style: this.template.branch,
+	            showLabel: args.showLabel,
 	            onGraphUpdate: () => this.next(),
 	        };
 	        if (typeof args === "string") {
@@ -2384,7 +2387,7 @@
 	            if (!branch.style.label.display)
 	                return null;
 	            // add condition to show commit lbl
-	            if (!gitgraph.branchLabelOnEveryCommit || commit.showLabel) {
+	            if (!gitgraph.branchLabelOnEveryCommit || branch.showLabel) {
 	                var commitHash = gitgraph.refs.getCommit(branch.name);
 	                if (commit.hash !== commitHash)
 	                    return null;
