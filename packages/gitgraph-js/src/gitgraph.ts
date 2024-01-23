@@ -438,9 +438,10 @@ function createGitgraph(
     return branches.map((branch) => {
       if (!branch.style.label.display) return null;
       // add condition to show commit lbl
-      if (!gitgraph.branchLabelOnEveryCommit || branch.showLabel) {
+      const renderLabel = !!branch.showLabel;
+      if (!gitgraph.branchLabelOnEveryCommit || renderLabel) {
         const commitHash = gitgraph.refs.getCommit(branch.name);
-        if (commit.hash !== commitHash) return null;
+        if (commit.hash !== commitHash && !renderLabel) return null;
       }
 
       // For the moment, we don't handle multiple branch labels.

@@ -1,6 +1,6 @@
 {
   "name": "@sourceflow/gitgraph-js",
-  "version": "1.4.1",
+  "version": "1.4.2",
   "description": "Draw pretty git graphs in the browser",
   "author": "Nicolas Carlo <nicolascarlo.espeon@gmail.com>",
   "contributors": [
