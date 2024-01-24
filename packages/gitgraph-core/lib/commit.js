@@ -48,6 +48,8 @@ class Commit {
         this.dotText = options.dotText;
         // hide or display label
         this.showLabel = options.showLabel;
+        // commit Label
+        this.commitLabel = options.commitLabel;
         // Set callbacks
         this.onClick = () => (options.onClick ? options.onClick(this) : undefined);
         this.onMessageClick = () => options.onMessageClick ? options.onMessageClick(this) : undefined;
@@ -58,9 +60,6 @@ class Commit {
         this.renderMessage = options.renderMessage;
         this.renderTooltip = options.renderTooltip;
     }
-    /**
-     * Message
-     */
     get message() {
         let message = "";
         if (this.style.message.displayHash) {

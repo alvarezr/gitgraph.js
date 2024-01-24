@@ -298,7 +298,7 @@ function createGitgraph(graphContainer, options) {
             if (commit.branchToDisplay !== branch.name)
                 return null;
             var branchLabel = branch.renderLabel
-                ? branch.renderLabel(branch)
+                ? branch.renderLabel(branch, commit)
                 : createBranchLabel(branch, commit);
             var branchLabelContainer;
             if (gitgraph.isVertical) {

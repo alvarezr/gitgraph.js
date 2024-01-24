@@ -19,7 +19,7 @@ interface BranchCommitDefaultOptions<TNode> extends CommitRenderOptions<TNode> {
 }
 
 interface BranchRenderOptions<TNode> {
-  renderLabel?: (branch: Branch<TNode>) => TNode;
+  renderLabel?: (branch: Branch<TNode>, commit: Commit) => TNode;
 }
 
 interface BranchOptions<TNode = SVGElement> extends BranchRenderOptions<TNode> {

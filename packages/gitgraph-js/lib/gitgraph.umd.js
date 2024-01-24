@@ -476,6 +476,8 @@
 	        this.dotText = options.dotText;
 	        // hide or display label
 	        this.showLabel = options.showLabel;
+	        // commit Label
+	        this.commitLabel = options.commitLabel;
 	        // Set callbacks
 	        this.onClick = () => (options.onClick ? options.onClick(this) : undefined);
 	        this.onMessageClick = () => options.onMessageClick ? options.onMessageClick(this) : undefined;
@@ -486,9 +488,6 @@
 	        this.renderMessage = options.renderMessage;
 	        this.renderTooltip = options.renderTooltip;
 	    }
-	    /**
-	     * Message
-	     */
 	    get message() {
 	        let message = "";
 	        if (this.style.message.displayHash) {
@@ -2398,7 +2397,7 @@
 	            if (commit.branchToDisplay !== branch.name)
 	                return null;
 	            var branchLabel = branch.renderLabel
-	                ? branch.renderLabel(branch)
+	                ? branch.renderLabel(branch, commit)
 	                : createBranchLabel(branch, commit);
 	            var branchLabelContainer;
 	            if (gitgraph.isVertical) {

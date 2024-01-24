@@ -21,6 +21,7 @@ interface CommitOptions<TNode> extends CommitRenderOptions<TNode> {
   parents?: string[];
   dotText?: string;
   showLabel?: boolean;
+  commitLabel?: string;
   onClick?: (commit: Commit<TNode>) => void;
   onMessageClick?: (commit: Commit<TNode>) => void;
   onMouseOver?: (commit: Commit<TNode>) => void;
@@ -114,6 +115,8 @@ class Commit<TNode = SVGElement> {
   /**
    * Message
    */
+  public commitLabel:string | undefined;
+
   public get message() {
     let message = "";
 
@@ -216,6 +219,8 @@ class Commit<TNode = SVGElement> {
 
     // hide or display label
     this.showLabel = options.showLabel;
+    // commit Label
+    this.commitLabel = options.commitLabel;
 
     // Set callbacks
     this.onClick = () => (options.onClick ? options.onClick(this) : undefined);

@@ -30,7 +30,7 @@ export var BranchLabel = React.forwardRef(function (props, ref) {
     // To do so, we'd need to reposition each of them appropriately.
     if (commit.branchToDisplay !== branch.name)
         return null;
-    var branchLabel = branch.renderLabel ? (branch.renderLabel(branch)) : (React.createElement(DefaultBranchLabel, { branch: branch, commit: commit }));
+    var branchLabel = branch.renderLabel ? (branch.renderLabel(branch, commit)) : (React.createElement(DefaultBranchLabel, { branch: branch, commit: commit }));
     if (props.gitgraph.isVertical) {
         return (React.createElement("g", { ref: ref, transform: "translate(" + (branchLabelX || 0) + ", 0)" }, branchLabel));
     }

@@ -449,7 +449,7 @@ function createGitgraph(
       if (commit.branchToDisplay !== branch.name) return null;
 
       const branchLabel = branch.renderLabel
-        ? branch.renderLabel(branch)
+        ? branch.renderLabel(branch, commit)
         : createBranchLabel(branch, commit);
 
       let branchLabelContainer;
